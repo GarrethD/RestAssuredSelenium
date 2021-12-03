@@ -32,8 +32,7 @@ jobs:
       run: mvn test -DsuiteFile="TestNG.xml"
       
     - name: Publish Test Report
-      if: ${{ always() }}
       uses: scacap/action-surefire-report@v1
-     # with:
-      #    name: ExtentReports
-     #     path: ExtentReports/ExtentReportResults.html
+      with:
+          name: TestNG SurfireReports
+          path: target/surefire-reports
