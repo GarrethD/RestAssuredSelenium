@@ -31,8 +31,9 @@ jobs:
     - name: Build with Maven
       run: mvn test -DsuiteFile="TestNG.xml"
       
-    - name: Publish Test Report
-      uses: scacap/action-surefire-report@v1
+    - name: Upload Automation artifacts
+      uses: actions/upload-artifact@v2
       with:
-          name: TestNG SurfireReports
-          path: target/surefire-reports
+          name: ExtentReports
+          path: ExtentReports/ExtentReportResults.html  
+
