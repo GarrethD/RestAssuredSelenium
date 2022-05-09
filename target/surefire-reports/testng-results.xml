@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-09T13:46:54Z" name="AutomationPOC" finished-at="2022-05-09T13:47:01Z" duration-ms="6903">
+    <groups>
+    </groups>
+    <test started-at="2022-05-09T13:46:54Z" name="Smoke Pack" finished-at="2022-05-09T13:47:01Z" duration-ms="6903">
+      <class name="ApiTests.PetstoreOrders">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:ApiTests.PetstoreOrders@f8c1ddd]" started-at="2022-05-09T15:46:58Z" name="Setup" finished-at="2022-05-09T15:46:58Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="PlaceOrder(java.lang.reflect.Method)[pri:0, instance:ApiTests.PetstoreOrders@f8c1ddd]" started-at="2022-05-09T15:46:58Z" name="PlaceOrder" finished-at="2022-05-09T15:46:59Z" duration-ms="485" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[private void ApiTests.PetstoreOrders.PlaceOrder(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlaceOrder -->
+        <test-method signature="LookupOrder(java.lang.reflect.Method)[pri:0, instance:ApiTests.PetstoreOrders@f8c1ddd]" started-at="2022-05-09T15:46:59Z" name="LookupOrder" finished-at="2022-05-09T15:46:59Z" depends-on-methods="ApiTests.PetstoreOrders.PlaceOrder" duration-ms="478" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[private void ApiTests.PetstoreOrders.LookupOrder(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LookupOrder -->
+        <test-method signature="DeleteOrder(java.lang.reflect.Method)[pri:0, instance:ApiTests.PetstoreOrders@f8c1ddd]" started-at="2022-05-09T15:46:59Z" name="DeleteOrder" finished-at="2022-05-09T15:46:59Z" depends-on-methods="ApiTests.PetstoreOrders.LookupOrder" duration-ms="480" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[private void ApiTests.PetstoreOrders.DeleteOrder(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteOrder -->
+        <test-method is-config="true" signature="KillDriver()[pri:0, instance:ApiTests.PetstoreOrders@f8c1ddd]" started-at="2022-05-09T15:46:59Z" name="KillDriver" finished-at="2022-05-09T15:46:59Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KillDriver -->
+      </class> <!-- ApiTests.PetstoreOrders -->
+      <class name="ApiTests.UserOperations">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:ApiTests.UserOperations@2133814f]" started-at="2022-05-09T15:46:59Z" name="Setup" finished-at="2022-05-09T15:46:59Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="CreateNewUser(java.lang.reflect.Method)[pri:0, instance:ApiTests.UserOperations@2133814f]" started-at="2022-05-09T15:46:59Z" name="CreateNewUser" finished-at="2022-05-09T15:47:00Z" duration-ms="478" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[private void ApiTests.UserOperations.CreateNewUser(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateNewUser -->
+        <test-method signature="UpdatePetstoreUserDetails(java.lang.reflect.Method)[pri:0, instance:ApiTests.UserOperations@2133814f]" started-at="2022-05-09T15:47:00Z" name="UpdatePetstoreUserDetails" finished-at="2022-05-09T15:47:00Z" depends-on-methods="ApiTests.UserOperations.CreateNewUser" duration-ms="480" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[private void ApiTests.UserOperations.UpdatePetstoreUserDetails(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdatePetstoreUserDetails -->
+        <test-method signature="DeletePetstoreUser(java.lang.reflect.Method)[pri:0, instance:ApiTests.UserOperations@2133814f]" started-at="2022-05-09T15:47:00Z" name="DeletePetstoreUser" finished-at="2022-05-09T15:47:01Z" depends-on-methods="ApiTests.UserOperations.UpdatePetstoreUserDetails" duration-ms="509" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[private void ApiTests.UserOperations.DeletePetstoreUser(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeletePetstoreUser -->
+        <test-method is-config="true" signature="KillDriver()[pri:0, instance:ApiTests.UserOperations@2133814f]" started-at="2022-05-09T15:47:01Z" name="KillDriver" finished-at="2022-05-09T15:47:01Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KillDriver -->
+      </class> <!-- ApiTests.UserOperations -->
+      <class name="ApiTests.EverythingAboutYourPet">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:ApiTests.EverythingAboutYourPet@5a955565]" started-at="2022-05-09T15:46:54Z" name="Setup" finished-at="2022-05-09T15:46:54Z" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="AddPetToPetstore(java.lang.reflect.Method)[pri:0, instance:ApiTests.EverythingAboutYourPet@5a955565]" started-at="2022-05-09T15:46:54Z" name="AddPetToPetstore" finished-at="2022-05-09T15:46:57Z" duration-ms="2857" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[private void ApiTests.EverythingAboutYourPet.AddPetToPetstore(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddPetToPetstore -->
+        <test-method signature="EditPetDetails(java.lang.reflect.Method)[pri:0, instance:ApiTests.EverythingAboutYourPet@5a955565]" started-at="2022-05-09T15:46:57Z" name="EditPetDetails" finished-at="2022-05-09T15:46:58Z" depends-on-methods="ApiTests.EverythingAboutYourPet.AddPetToPetstore" duration-ms="504" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[private void ApiTests.EverythingAboutYourPet.EditPetDetails(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditPetDetails -->
+        <test-method signature="DeletePetFromStore(java.lang.reflect.Method)[pri:0, instance:ApiTests.EverythingAboutYourPet@5a955565]" started-at="2022-05-09T15:46:58Z" name="DeletePetFromStore" finished-at="2022-05-09T15:46:58Z" depends-on-methods="ApiTests.EverythingAboutYourPet.EditPetDetails" duration-ms="499" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[private void ApiTests.EverythingAboutYourPet.DeletePetFromStore(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeletePetFromStore -->
+        <test-method is-config="true" signature="KillDriver()[pri:0, instance:ApiTests.EverythingAboutYourPet@5a955565]" started-at="2022-05-09T15:46:58Z" name="KillDriver" finished-at="2022-05-09T15:46:58Z" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KillDriver -->
+      </class> <!-- ApiTests.EverythingAboutYourPet -->
+    </test> <!-- Smoke Pack -->
+  </suite> <!-- AutomationPOC -->
+</testng-results>

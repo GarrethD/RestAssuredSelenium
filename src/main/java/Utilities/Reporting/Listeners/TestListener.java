@@ -1,6 +1,5 @@
 package Utilities.Reporting.Listeners;
 
-import Base.Driver;
 import Utilities.Reporting.ExtentReport.ExtentManager;
 import Utilities.Reporting.ExtentReport.ExtentTestManager;
 
@@ -19,7 +18,7 @@ import static com.aventstack.extentreports.Status.PASS;
 /**
  * The test listener is the middle man between extent reports and the test being run. This class listens to passes, fails, skips ect.
  */
-public class TestListener extends Driver implements ITestListener {
+public class TestListener  implements ITestListener {
 
     private static String getTestMethodName(ITestResult iTestResult) {
         return iTestResult.getMethod().getConstructorOrMethod().getName();
@@ -28,7 +27,7 @@ public class TestListener extends Driver implements ITestListener {
     @Override
     public void onStart(ITestContext iTestContext) {
         System.out.println("I am in onStart method " + iTestContext.getName());
-        iTestContext.setAttribute("WebDriver", this.webDriver);
+        iTestContext.setAttribute("WebDriver","");
     }
 
     @Override
@@ -53,14 +52,6 @@ public class TestListener extends Driver implements ITestListener {
     @Override
     public void onTestFailure(ITestResult iTestResult) {
         System.out.println("I am in onTestFailure method " + getTestMethodName(iTestResult) + " failed");
-
-        //Get driver from BaseTest and assign to local webDriver variable.
-        Object testClass = iTestResult.getInstance();
-        WebDriver webDriver = ((Driver) testClass).getDriver();
-
-        //Take base64Screenshot screenshot.
-        String base64Screenshot = "data:image/png;base64," + ((TakesScreenshot) webDriver).
-                getScreenshotAs(OutputType.BASE64);
 
         //ExtentReports log and screenshot operations for failed tests.
         ExtentTestManager.test.fail("details", MediaEntityBuilder.createScreenCaptureFromPath("screenshot.png").build());

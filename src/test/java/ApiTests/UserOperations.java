@@ -1,7 +1,7 @@
 package ApiTests;
 
 import Base.ApiDriver;
-import Env_Configuration.Config;
+import Configuration.Config;
 import Utilities.ApiDataSetup.UserRelatedApiDataSetup;
 import Utilities.Reporting.ExtentReport.ExtentManager;
 import Utilities.Reporting.ExtentReport.ExtentTestManager;

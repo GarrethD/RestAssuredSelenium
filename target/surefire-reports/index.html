@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-AutomationPOC" class="navigator-link">
+              <span class="suite-name border-passed">AutomationPOC</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-AutomationPOC" class="navigator-link ">
+                    <span>C:\Users\garre\Documents\GitHub\RestAssuredSelenium - Copy\TestNG_Runner_API.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-AutomationPOC" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-AutomationPOC" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-AutomationPOC" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-AutomationPOC" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-AutomationPOC" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-AutomationPOC" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-AutomationPOC" class="hide-methods passed suite-AutomationPOC"> (hide)</a> <!-- hide-methods passed suite-AutomationPOC -->
+                      <a href="#" panel-name="suite-AutomationPOC" class="show-methods passed suite-AutomationPOC"> (show)</a> <!-- show-methods passed suite-AutomationPOC -->
+                    </span>
+                    <div class="method-list-content passed suite-AutomationPOC">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationPOC" title="ApiTests.EverythingAboutYourPet" class="method navigator-link" hash-for-method="AddPetToPetstore(private void ApiTests.EverythingAboutYourPet.AddPetToPetstore(java.lang.reflect.Method))">AddPetToPetstore(private void ApiTests.EverythingAboutYourPet.AddPetToPetstore(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationPOC" title="ApiTests.UserOperations" class="method navigator-link" hash-for-method="CreateNewUser(private void ApiTests.UserOperations.CreateNewUser(java.lang.reflect.Method))">CreateNewUser(private void ApiTests.UserOperations.CreateNewUser(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationPOC" title="ApiTests.PetstoreOrders" class="method navigator-link" hash-for-method="DeleteOrder(private void ApiTests.PetstoreOrders.DeleteOrder(java.lang.reflect.Method))">DeleteOrder(private void ApiTests.PetstoreOrders.DeleteOrder(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationPOC" title="ApiTests.EverythingAboutYourPet" class="method navigator-link" hash-for-method="DeletePetFromStore(private void ApiTests.EverythingAboutYourPet.DeletePetFromStore(java.lang.reflect.Method))">DeletePetFromStore(private void ApiTests.EverythingAboutYourPet.DeletePetFromStore(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationPOC" title="ApiTests.UserOperations" class="method navigator-link" hash-for-method="DeletePetstoreUser(private void ApiTests.UserOperations.DeletePetstoreUser(java.lang.reflect.Method))">DeletePetstoreUser(private void ApiTests.UserOperations.DeletePetstoreUser(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationPOC" title="ApiTests.EverythingAboutYourPet" class="method navigator-link" hash-for-method="EditPetDetails(private void ApiTests.EverythingAboutYourPet.EditPetDetails(java.lang.reflect.Method))">EditPetDetails(private void ApiTests.EverythingAboutYourPet.EditPetDetails(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationPOC" title="ApiTests.PetstoreOrders" class="method navigator-link" hash-for-method="LookupOrder(private void ApiTests.PetstoreOrders.LookupOrder(java.lang.reflect.Method))">LookupOrder(private void ApiTests.PetstoreOrders.LookupOrder(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationPOC" title="ApiTests.PetstoreOrders" class="method navigator-link" hash-for-method="PlaceOrder(private void ApiTests.PetstoreOrders.PlaceOrder(java.lang.reflect.Method))">PlaceOrder(private void ApiTests.PetstoreOrders.PlaceOrder(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationPOC" title="ApiTests.UserOperations" class="method navigator-link" hash-for-method="UpdatePetstoreUserDetails(private void ApiTests.UserOperations.UpdatePetstoreUserDetails(java.lang.reflect.Method))">UpdatePetstoreUserDetails(private void ApiTests.UserOperations.UpdatePetstoreUserDetails(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-AutomationPOC -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-AutomationPOC" class="panel AutomationPOC">
+          <div class="suite-AutomationPOC-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ApiTests.UserOperations</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateNewUser(private void ApiTests.UserOperations.CreateNewUser(java.lang.reflect.Method))">
+                  </a> <!-- CreateNewUser(private void ApiTests.UserOperations.CreateNewUser(java.lang.reflect.Method)) -->
+                  <span class="method-name">CreateNewUser</span>
+                  <span class="parameters">(private void ApiTests.UserOperations.CreateNewUser(java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeletePetstoreUser(private void ApiTests.UserOperations.DeletePetstoreUser(java.lang.reflect.Method))">
+                  </a> <!-- DeletePetstoreUser(private void ApiTests.UserOperations.DeletePetstoreUser(java.lang.reflect.Method)) -->
+                  <span class="method-name">DeletePetstoreUser</span>
+                  <span class="parameters">(private void ApiTests.UserOperations.DeletePetstoreUser(java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UpdatePetstoreUserDetails(private void ApiTests.UserOperations.UpdatePetstoreUserDetails(java.lang.reflect.Method))">
+                  </a> <!-- UpdatePetstoreUserDetails(private void ApiTests.UserOperations.UpdatePetstoreUserDetails(java.lang.reflect.Method)) -->
+                  <span class="method-name">UpdatePetstoreUserDetails</span>
+                  <span class="parameters">(private void ApiTests.UserOperations.UpdatePetstoreUserDetails(java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationPOC-class-passed -->
+          <div class="suite-AutomationPOC-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ApiTests.EverythingAboutYourPet</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddPetToPetstore(private void ApiTests.EverythingAboutYourPet.AddPetToPetstore(java.lang.reflect.Method))">
+                  </a> <!-- AddPetToPetstore(private void ApiTests.EverythingAboutYourPet.AddPetToPetstore(java.lang.reflect.Method)) -->
+                  <span class="method-name">AddPetToPetstore</span>
+                  <span class="parameters">(private void ApiTests.EverythingAboutYourPet.AddPetToPetstore(java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeletePetFromStore(private void ApiTests.EverythingAboutYourPet.DeletePetFromStore(java.lang.reflect.Method))">
+                  </a> <!-- DeletePetFromStore(private void ApiTests.EverythingAboutYourPet.DeletePetFromStore(java.lang.reflect.Method)) -->
+                  <span class="method-name">DeletePetFromStore</span>
+                  <span class="parameters">(private void ApiTests.EverythingAboutYourPet.DeletePetFromStore(java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="EditPetDetails(private void ApiTests.EverythingAboutYourPet.EditPetDetails(java.lang.reflect.Method))">
+                  </a> <!-- EditPetDetails(private void ApiTests.EverythingAboutYourPet.EditPetDetails(java.lang.reflect.Method)) -->
+                  <span class="method-name">EditPetDetails</span>
+                  <span class="parameters">(private void ApiTests.EverythingAboutYourPet.EditPetDetails(java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationPOC-class-passed -->
+          <div class="suite-AutomationPOC-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ApiTests.PetstoreOrders</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeleteOrder(private void ApiTests.PetstoreOrders.DeleteOrder(java.lang.reflect.Method))">
+                  </a> <!-- DeleteOrder(private void ApiTests.PetstoreOrders.DeleteOrder(java.lang.reflect.Method)) -->
+                  <span class="method-name">DeleteOrder</span>
+                  <span class="parameters">(private void ApiTests.PetstoreOrders.DeleteOrder(java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LookupOrder(private void ApiTests.PetstoreOrders.LookupOrder(java.lang.reflect.Method))">
+                  </a> <!-- LookupOrder(private void ApiTests.PetstoreOrders.LookupOrder(java.lang.reflect.Method)) -->
+                  <span class="method-name">LookupOrder</span>
+                  <span class="parameters">(private void ApiTests.PetstoreOrders.LookupOrder(java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PlaceOrder(private void ApiTests.PetstoreOrders.PlaceOrder(java.lang.reflect.Method))">
+                  </a> <!-- PlaceOrder(private void ApiTests.PetstoreOrders.PlaceOrder(java.lang.reflect.Method)) -->
+                  <span class="method-name">PlaceOrder</span>
+                  <span class="parameters">(private void ApiTests.PetstoreOrders.PlaceOrder(java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationPOC-class-passed -->
+        </div> <!-- panel AutomationPOC -->
+        <div panel-name="test-xml-AutomationPOC" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\garre\Documents\GitHub\RestAssuredSelenium - Copy\TestNG_Runner_API.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;AutomationPOC&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test name=&quot;Smoke Pack&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;ApiTests.EverythingAboutYourPet&quot;/&gt;
+      &lt;class name=&quot;ApiTests.PetstoreOrders&quot;/&gt;
+      &lt;class name=&quot;ApiTests.UserOperations&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Smoke Pack --&gt;
+&lt;/suite&gt; &lt;!-- AutomationPOC --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-AutomationPOC" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for AutomationPOC</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Smoke Pack (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-AutomationPOC" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for AutomationPOC</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-AutomationPOC" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for AutomationPOC</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_AutomationPOC');
+function tableData_AutomationPOC() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'AddPetToPetstore')
+data.setCell(0, 2, 'ApiTests.EverythingAboutYourPet')
+data.setCell(0, 3, 2857);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'DeletePetstoreUser')
+data.setCell(1, 2, 'ApiTests.UserOperations')
+data.setCell(1, 3, 509);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'EditPetDetails')
+data.setCell(2, 2, 'ApiTests.EverythingAboutYourPet')
+data.setCell(2, 3, 504);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'DeletePetFromStore')
+data.setCell(3, 2, 'ApiTests.EverythingAboutYourPet')
+data.setCell(3, 3, 499);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'PlaceOrder')
+data.setCell(4, 2, 'ApiTests.PetstoreOrders')
+data.setCell(4, 3, 485);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'UpdatePetstoreUserDetails')
+data.setCell(5, 2, 'ApiTests.UserOperations')
+data.setCell(5, 3, 480);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'DeleteOrder')
+data.setCell(6, 2, 'ApiTests.PetstoreOrders')
+data.setCell(6, 3, 480);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'LookupOrder')
+data.setCell(7, 2, 'ApiTests.PetstoreOrders')
+data.setCell(7, 3, 478);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'CreateNewUser')
+data.setCell(8, 2, 'ApiTests.UserOperations')
+data.setCell(8, 3, 478);
+window.suiteTableData['AutomationPOC']= { tableData: data, tableDiv: 'times-div-AutomationPOC'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <div id="times-div-AutomationPOC">
+              </div> <!-- times-div-AutomationPOC -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-AutomationPOC" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for AutomationPOC</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-AutomationPOC" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-AutomationPOC" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">ApiTests.EverythingAboutYourPet</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">Setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">AddPetToPetstore(private void ApiTests.EverythingAboutYourPet.AddPetToPetstore(java.lang.reflect.Method))</span>
+                <span class="method-start">109 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">EditPetDetails(private void ApiTests.EverythingAboutYourPet.EditPetDetails(java.lang.reflect.Method))</span>
+                <span class="method-start">2973 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DeletePetFromStore(private void ApiTests.EverythingAboutYourPet.DeletePetFromStore(java.lang.reflect.Method))</span>
+                <span class="method-start">3477 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">KillDriver</span>
+                <span class="method-start">3976 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ApiTests.PetstoreOrders</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">Setup</span>
+                <span class="method-start">3981 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">PlaceOrder(private void ApiTests.PetstoreOrders.PlaceOrder(java.lang.reflect.Method))</span>
+                <span class="method-start">3982 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LookupOrder(private void ApiTests.PetstoreOrders.LookupOrder(java.lang.reflect.Method))</span>
+                <span class="method-start">4467 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DeleteOrder(private void ApiTests.PetstoreOrders.DeleteOrder(java.lang.reflect.Method))</span>
+                <span class="method-start">4945 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">KillDriver</span>
+                <span class="method-start">5425 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ApiTests.UserOperations</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">Setup</span>
+                <span class="method-start">5426 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">CreateNewUser(private void ApiTests.UserOperations.CreateNewUser(java.lang.reflect.Method))</span>
+                <span class="method-start">5427 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">UpdatePetstoreUserDetails(private void ApiTests.UserOperations.UpdatePetstoreUserDetails(java.lang.reflect.Method))</span>
+                <span class="method-start">5905 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DeletePetstoreUser(private void ApiTests.UserOperations.DeletePetstoreUser(java.lang.reflect.Method))</span>
+                <span class="method-start">6386 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">KillDriver</span>
+                <span class="method-start">6895 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

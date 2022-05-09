@@ -18,7 +18,7 @@ The framework is broken down into 5 core components:
 2. The Driver class is the core of the framework. This is where all the selenium methods reside and where we choose what
 browser we want to test against. Without this class there is no framework.
 
-3. The Env_Configuration package. This package links the tests to Jenkins as well as handles a few things like getting the environment as well as receiving Jenkins parameters if used.
+3. The Configuration package. This package links the tests to Jenkins as well as handles a few things like getting the environment as well as receiving Jenkins parameters if used.
 In this package we set Enums for users and URLs that we can switch dynamically while testing. We can add Enums for many things but for now URLs and Users work perfectly.
 
 4. PageObjects Package. This package holds the pageObjects classes of the system being tested. 
@@ -71,35 +71,14 @@ i.e
 Many combinations can be set to run smoke packs, regression packs , different browsers, environments etc.
 
 # B. How to run tests in CI/CD
-1. Log into GitHub and navigate to the automation repo.
-2. Click on actions from the repo page
-3. Select the Workflow you would like to run (In this case it's the 'Java CI with maven' workflow)
-4. click on the 'Run workflow' | Enter the name of the person executing the flow
-5. Done! 
 
 # Reporting:
-The framework produces an ExtentReportResults.html file that resided in the '**ExtentReports**' folder along with any images taken upon failure. The Reporting is handled by a free opensource library called 'Extent Reports'.
-More information around ExtentReports can be found at : https://www.extentreports.com/
-
-# C. Calliope Pro Report upload link:
-
-https://app.calliope.pro/reports/104855/public/8fed026e-c307-443c-a65d-6fe7b75c523f
 
 # D. Approach to selecting Scenarios:
 
 Generally I like to take the approach of that if the most impactful parts of the system is automated then the client or Product owner will gain confidence around automation and testing in general.
 Thus, I do feel that it's extremely important to showcase the CRUD of any application. The CRUD refers to Create Edit and delete.
 I based all my testing in this project around CRUD.
-
-For UI tests:
-
-Bookstore - scenario
-1. Log in
-2. Add a book to user collection
-3. Delete book from user collection.
-
-Why log in instead of create a user? Simply put, There is currently no way to automate reCaptcha. The only way around reCaptcha is to ask the devs to disable it dev or staging environment
-or test around it by doing reCaptcha processes manually. 
 
 For API tests:
 
@@ -119,14 +98,3 @@ User Operations - Scenario
 3. Delete a user - Testcase 3
 
 
-# Why are these important?
-The structure is the same for any CRUD no matter the application. This shows immediate impact and demonstrates the power of automation very well to new clients interested in Automaton.
-No matter the application, generally there is a login portal, signup portal or a user can place an order or search for products. Thus making it very easy to come up with a CRUD example.
-When clients approach a consultancy, and they ask for automaton, they generally don't quite understand what that is. They don't understand what goes into testing. This approach is the least effort with most impact.
-
-# Next steps for the project:
-I think the next step would be to start filling in some automation test cases. I do feel this framework has a lot to offer, and it's very modular.
-If mobile testing is required, It would be as easy as adding a driver class to the Base package that handles all the mobile gestures.
-Having it as a separate class makes it more manageable, and it allows a user to do UI and Automation in tandem.
-
-Do you need to do some actions on the mobile and have it reflect on the web based ui? That will be possible.

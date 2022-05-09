@@ -1,7 +1,7 @@
 package Utilities.Reporting.ExtentReport;
 
 
-import Env_Configuration.Config;
+import Configuration.Config;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
